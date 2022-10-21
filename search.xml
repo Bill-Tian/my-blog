@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>测试封面</title>
+      <link href="/2022/10/13/%E6%B5%8B%E8%AF%95%E5%B0%81%E9%9D%A2/"/>
+      <url>/2022/10/13/%E6%B5%8B%E8%AF%95%E5%B0%81%E9%9D%A2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="封面测试"><a href="#封面测试" class="headerlink" title="封面测试"></a>封面测试</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 封面 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS知识点</title>
+      <link href="/2022/10/12/CSS%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+      <url>/2022/10/12/CSS%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS常见问题总计"><a href="#CSS常见问题总计" class="headerlink" title="CSS常见问题总计"></a>CSS常见问题总计</h1><h3 id="CSS解决高度坍塌的4种方案"><a href="#CSS解决高度坍塌的4种方案" class="headerlink" title="CSS解决高度坍塌的4种方案"></a>CSS解决高度坍塌的4种方案</h3><ol><li><p>为父元素设置overflow:hidden属性。<br>原理：css中的&#x3D;&#x3D;overflow:hidden&#x3D;&#x3D;属性会强制要求父元素必须包裹住所有内部浮动的元素，以及所有元素的&#x3D;&#x3D;margin&#x3D;&#x3D;的范围。</p></li><li><p>在父元素的结尾追加一个空子元素（块级元素），并设置空子元素清除浮动影响（&#x3D;&#x3D;clear:both&#x3D;&#x3D;）。<br>原理：利用clear:both属性和父元素必须包含非浮动的元素两个原理。</p></li><li><p>设置父元素也浮动。<br>原理：浮动属性也会强制父元素扩大到包含所有浮动的内部元素。</p></li><li><p>完美解决：为父元素末尾伪元素设置clear:both。</p></li></ol><h3 id="BFC（Block-formatting-context）"><a href="#BFC（Block-formatting-context）" class="headerlink" title="BFC（Block formatting context）"></a>BFC（Block formatting context）</h3><ul><li>他是网页中一个&#x3D;&#x3D;独立的渲染区域&#x3D;&#x3D;</li><li>这个渲染区域&#x3D;&#x3D;只有块级（Block）元素才能参与&#x3D;&#x3D;。</li><li>他规定了&#x3D;&#x3D;内部的块级元素&#x3D;&#x3D;如何布局。</li><li>BFC渲染区域内部如何布局，&#x3D;&#x3D;与区域外部好不相干&#x3D;&#x3D;。<br>简单说：BFC就是页面上的一个隔离的独立渲染区域。<br>区域里面的子元素不会影响到外面的元素。<br>外面的元素也不会影响到区域里面的子元素。<br><img src="/1" alt="image.png"></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> css </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> overflow </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VUE基础组件</title>
+      <link href="/2022/10/12/VUE%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/"/>
+      <url>/2022/10/12/VUE%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="组件的生命周期-创建，挂载，更新，销毁"><a href="#组件的生命周期-创建，挂载，更新，销毁" class="headerlink" title="组件的生命周期(创建，挂载，更新，销毁)"></a>组件的生命周期(创建，挂载，更新，销毁)</h2><ul><li>beforeCreate</li><li>created</li><li>beforeMounted</li><li>mounted</li><li>beforeUpdate</li><li>update</li><li>beforeDestroy</li><li>destroyed</li></ul><p><a href="https://blog.csdn.net/FengyCoder/article/details/85227113">vue生命周期</a><br><img src="https://img-blog.csdnimg.cn/2018122322200384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Zlbmd5Q29kZXI=,size_16,color_FFFFFF,t_70" alt="vue生命周期"></p><h2 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props</span>:[<span class="string">&quot;title&quot;</span>].</span><br><span class="line"><span class="attr">props</span>:&#123;</span><br><span class="line"><span class="attr">title</span>:<span class="title class_">String</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="attr">props</span>:&#123;</span><br><span class="line"><span class="attr">title</span>:&#123;</span><br><span class="line"><span class="attr">type</span>:<span class="title class_">String</span>,</span><br><span class="line"><span class="attr">require</span>:<span class="literal">true</span>,</span><br><span class="line"><span class="attr">default</span>:<span class="string">&quot;this is a foo&quot;</span>,</span><br><span class="line"><span class="title function_">validator</span>(<span class="params"></span>)&#123; <span class="keyword">return</span> <span class="literal">true</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>props 不能被改写，只是可读的。只能从父组件往下传，子组件不能修改props的值。</p><h2 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h2><ul><li>$emit</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">this</span>.$emit(<span class="string">&quot;change-name&quot;</span>,<span class="number">1</span>,<span class="number">2</span>); <span class="comment">// 可传多个</span></span><br></pre></td></tr></table></figure><p>父组件接收用 @change-name&#x3D;”toParent”</p><ul><li><p>v-model<br>props:[“value”] 子组件直接用value接收。<br>子组件用 this.$emit(“input”,”newTitle”) 传给父组件<br>父组件用 v-model&#x3D;”‘fooTitle’”</p></li><li><p>sync</p></li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:title.<span class="property">sync</span> = <span class="string">&quot;&#x27;fooTitle&#x27;&quot;</span></span><br><span class="line">子组件用 <span class="variable language_">this</span>.$emit(<span class="string">&quot;update:title&quot;</span>,<span class="string">&quot;newTitle&quot;</span>) 传给父组件</span><br><span class="line">v-<span class="attr">model</span>:props只能接收一个，sync可以接收多个。</span><br><span class="line">在<span class="variable constant_">V3</span>中v-model和sync合并。</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>嘻嘻</title>
+      <link href="/2022/10/12/%E5%98%BB%E5%98%BB/"/>
+      <url>/2022/10/12/%E5%98%BB%E5%98%BB/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试文章4</title>
+      <link href="/2022/10/12/%E6%B5%8B%E8%AF%954/"/>
+      <url>/2022/10/12/%E6%B5%8B%E8%AF%954/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试文章3</title>
+      <link href="/2022/10/12/%E6%B5%8B%E8%AF%953/"/>
+      <url>/2022/10/12/%E6%B5%8B%E8%AF%953/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试文章2</title>
+      <link href="/2022/10/12/%E6%B5%8B%E8%AF%952/"/>
+      <url>/2022/10/12/%E6%B5%8B%E8%AF%952/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试文章</title>
+      <link href="/2022/10/12/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/10/12/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
